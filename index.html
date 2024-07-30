@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- titulo do texto -->
+    <h1>Jogo da velha</h1>
+    <div id="amigos">
+        <p>Kiki é viado</p>
+        <p>Isabella jogadora de yuumi</p>
+        <p>Hugo gosta de ser maltrado</p>
+        <p>Namorada do uriel é brava(ou tem cara)</p>
+        <p id="laranja">Uriel é laranja</p>
+        <p>Luisa não pode namorar(se não for com o hugo)</p>
+        <p>miguel tem que parar de fumar</p>
+        <p>Carol gente fina demais, parece um anjo</p>
+    </div>
+
+    <!--div com 2 botões(2 playes e contra a IA)-->
+    <div id="buttons-container">
+        <button id="2-players">2 Jogadores</button>
+        <button id="ai-players">Contra IA</button>
+    </div>
+    <!-- container que representa o campo do jogo da velha (class="hide" => só será chamado esse elemento em um momento do jogo)  -->
+    <div id="container" class="hide">
+        <div class="box" id="block-1"></div>
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+        <!-- placar -->
+        <div id="scoreboard-container">
+            <h2>Placar:</h2>
+            <span class="score-box">
+            <!-- X -->
+            <span id="x-scoreboard">X</span>: <span id="scoreboard-1">0</span>
+            </span>
+            <!-- O -->
+            <span class="score-box">
+                <span id="o-scoreboard"></span>: <span id="scoreboard-2">0</span>
+            </span>
+        </div>
+    </div>
+    <!-- Div que contém elemento X e 0 que será inserido no container do jogo da velha (class="hide" => só será chamado esse elemento em um momento do jogo)-->
+    <div class="hide">
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+    <!-- apresenta mensagem de vencedor(class="hide" => só será chamado esse elemento em um momento do jogo) -->
+    <div id="message" class="hide">
+        <p>ssas</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
